@@ -3,14 +3,16 @@ body {
   width: 800px;
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
+  background-attachment:fixed;
 }
 
 /* haff.co top header*/
 
 
 header {
+  height: 170px;
   background-color: white;
-  padding: 0 0 40px 0;
+  padding: 0;
 }
 
 .haff {
@@ -32,239 +34,46 @@ div.title-line {
   border-top: 3px solid black;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Lato);
-body {
-  padding: 0;
-  background-color: #222; }
-
-* {
-  color: #273f75;
-  font-family: "Lato",Helvetica,sans-serif; }
-
-main.container {
-  height: 0;
+header.banner {
+  height: 0px;
 }
 
-input#checking {
-  position: relative;
-  top: 40px;
-  right: -20px;
-}
-
-.bar {
-  display: block;
-  position: relative;
-  top: -15px;
-  width: 30px;
-  height: 5px;
-  margin: 5px auto;
-  background-color: #fff;
-  border-radius: 2px;
-  transition: all 0.4s linear 0.1s;
-  -webkit-transition: all 0.4s linear 0.1s;
-  -moz-transition: all 0.4s linear 0.1s;
-  -o-transition: all 0.4s linear 0.1s;
-  -ms-transition: all 0.4s linear 0.1s; }
-  .bar:first-child {
-    margin-top: 27px; }
-
-.wrap {
-  position: relative;
-  top: -106px;
-  left: -280px;
-  margin: auto;
-  width: 150px;
-  height: 100px;
-  filter: url("#filt");
-  -webkit-filter: url("#filt");
-}
-
-.wrap .blob {
-  display: block;
-  cursor: pointer;
-  border: none;
-  outline: none;
-  position: absolute;
-  width: 50px;
+.hamburger {
+  border: 2px solid black;
+  border-radius: 20%;
+  background-color: transparent;
   height: 50px;
-  border-radius: 50%;
-  z-index: 10;
-  background-color: #c0c0c0;
-  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  -o-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-  -ms-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-}
-.wrap .blob[for="checking"] {
-  z-index: 30;
-  font-size: 60px;
-  text-align: center;
-  color: #fff;
-  transition: transform 0.5s ease-in-out 0.2s;
-  -webkit-transition: transform 0.5s ease-in-out 0.2s;
-  -moz-transition: transform 0.5s ease-in-out 0.2s;
-  -o-transition: transform 0.5s ease-in-out 0.2s;
-  -ms-transition: transform 0.5s ease-in-out 0.2s;
+  width: 50px;
+  position: relative;
+  top: -84px;
+  left: 37px;
 }
 
-.wrap .blob:not([for="checking"]) {
-  width: 50px;
-  height: 50px;
-  top: 19px;
+button.hamburger {
+  transform-style: preserve-3d;
+}
+
+button.hamburger:after {
+  top: -100%;
   left: 0px;
-  font-size: 30px;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-
+  width: 100%;
+  position: absolute;
+  background: #c0c0c0;
+  border-radius: 20%;
+  border: 2px solid black;
+  content: 'Flipped';
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
 }
 
-.wrap .blob:not([for="checking"]):hover {
-  color: #F44336;
-  animation: harlem 0.5s linear forwards;
-  -webkit-animation: harlem 0.5s linear forwards;
-  -moz-animation: harlem 0.5s linear forwards;
-  -o-animation: harlem 0.5s linear forwards;
-  -ms-animation: harlem 0.5s linear forwards;
+button.hamburger:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translate Y(100%);
 }
+/*navigation menu*/
 
-.wrap > #checking:checked ~ .blob:nth-child(2) {
-  margin-left: 104px;/*keep*/
-  margin-top: -3px;
-  background-color: #fff;
-}
+/*navigation menu*
 
-.wrap > #checking:checked ~ .blob:nth-child(3) {
-  margin-top: 110px;/*keep*/
-  margin-left: -16px;
-  background-color: #fff;
-}
-
-.wrap > #checking:checked ~ .blob:nth-child(4) {
-  margin-top: 87px; /*keep*/
-  margin-left: 35px;
-  background-color: #fff;
-}
-
-.wrap > #checking:checked ~ .blob:nth-child(5) {
-  margin-top: 49px;/*keep*/
-  margin-left: 79px;
-  background-color: #fff;
-}
-
-
-.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(1) {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  margin-top: 37px;
-}
-
-.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(2) {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  margin-top: -10px;
-}
-
-.wrap > #checking:checked ~ .blob[for="checking"] > .bar:nth-child(3) {
-    opacity: 0;
-}
-
-@keyframes harlem {
-  0% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -o-transform: translate(0);
-    -ms-transform: translate(0); }
-  25% {
-    transform: translate(5px, 5px);
-    -webkit-transform: translate(5px, 5px);
-    -moz-transform: translate(5px, 5px);
-    -o-transform: translate(5px, 5px);
-    -ms-transform: translate(5px, 5px); }
-  50% {
-    transform: translate(-5px, -5px);
-    -webkit-transform: translate(-5px, -5px);
-    -moz-transform: translate(-5px, -5px);
-    -o-transform: translate(-5px, -5px);
-    -ms-transform: translate(-5px, -5px); }
-  75% {
-    transform: translate(2px, 2px);
-    -webkit-transform: translate(2px, 2px);
-    -moz-transform: translate(2px, 2px);
-    -o-transform: translate(2px, 2px);
-    -ms-transform: translate(2px, 2px); }
-  100% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -o-transform: translate(0);
-    -ms-transform: translate(0); } }
-@-webkit-keyframes harlem {
-  0% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -o-transform: translate(0);
-    -ms-transform: translate(0); }
-  25% {
-    transform: translate(5px, 5px);
-    -webkit-transform: translate(5px, 5px);
-    -moz-transform: translate(5px, 5px);
-    -o-transform: translate(5px, 5px);
-    -ms-transform: translate(5px, 5px); }
-  50% {
-    transform: translate(-5px, -5px);
-    -webkit-transform: translate(-5px, -5px);
-    -moz-transform: translate(-5px, -5px);
-    -o-transform: translate(-5px, -5px);
-    -ms-transform: translate(-5px, -5px); }
-  75% {
-    transform: translate(2px, 2px);
-    -webkit-transform: translate(2px, 2px);
-    -moz-transform: translate(2px, 2px);
-    -o-transform: translate(2px, 2px);
-    -ms-transform: translate(2px, 2px); }
-  100% {
-    transform: translate(0);
-    -webkit-transform: translate(0);
-    -moz-transform: translate(0);
-    -o-transform: translate(0);
-    -ms-transform: translate(0); } }
-
-/*# sourceMappingURL=nav.css.map */
-
-
-.navbar {
-  text-align: center;
-  padding: 0 0 60px 0;
-  background-color: white;
-}
-
-.nav {
-  margin: auto;
-  padding: 0 0 3px 0;
-  border-bottom: 3px solid black;
-  width: 500px;
-}
-
-.nav li a {
-	margin: 0 50px 0;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  color: black;
-}
 
 /* logo picture*/
 .wood {

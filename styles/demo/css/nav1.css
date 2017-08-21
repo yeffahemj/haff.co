@@ -1,0 +1,60 @@
+/*
+Error: File to import not found or unreadable: types/3dxy.
+       Load path: /Users/jefferymehaffey/web-projects/haff/styles/demo/scss
+        on line 53 of scss/nav1.scss
+
+48:   squeeze,
+49:   vortex,
+50:   vortex-r
+51: ) !default;
+52: 
+53: @import "types/3dxy";
+
+Backtrace:
+scss/nav1.scss:53
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/import_node.rb:45:in `import'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/plugin.rb:109:in `method_missing'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/bin/sass:23:in `load'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/bin/sass:23:in `<main>'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `eval'
+/Users/jefferymehaffey/.rvm/gems/ruby-2.3.3/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: types/3dxy.\A        Load path: /Users/jefferymehaffey/web-projects/haff/styles/demo/scss\A         on line 53 of scss/nav1.scss\A \A 48:   squeeze,\A 49:   vortex,\A 50:   vortex-r\A 51: ) !default;\A 52: \A 53: @import \"types/3dxy\";"; }
