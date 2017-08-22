@@ -17,7 +17,7 @@ header {
 
 .haff {
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   font-family: 'Coda', cursive;
   width: 300px;
   height: 100px;
@@ -28,7 +28,7 @@ header {
 div.title-line {
   text-align: center;
   position: relative;
-  top: -30px;
+  top: -35px;
   width: 300px;
   margin: auto;
   border-top: 3px solid black;
@@ -44,9 +44,11 @@ li{
   top: -10px;
 }
 
+
+
 .nav ul {
   list-style: none;
-  background-color: #576781;
+  background-color: #8c9096;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -114,7 +116,7 @@ li{
 .pic {
   text-align: center;
   margin: auto;
-  padding: 20px 0 0 0;
+  padding: 20px 0;
 }
 
 /* all footer content*/
@@ -129,41 +131,6 @@ footer {
 ul.nav li{
   display: inline-block;
 }
-
-.box {
-  margin:40px auto;
-  text-align:center;
-  width: 800px;
-  position: relative;
-  top: 72px;
-}
-
-.foot {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  background-color: #C0C0C0;
-  border-top: 2px solid #8c8a8a;
-}
-
-p {
-  color: #8c8a8a;
-  margin: 10px auto;
-  font-size: 14px
-}
-
-/* footer social icons */
-ul.network {
-	list-style: none;
-	display: inline;
-	padding: 0;
-}
-ul.network li {
-	display: inline;
-	margin: 0 5px;
-}
-
 
 /* footer social icons */
 .network a.reddit:hover {
@@ -229,4 +196,63 @@ ul.network li {
 
 .icon {
  background-color: #C0C0C0;
+}
+
+/*other body items*/
+.container1 {
+  background-color: white;
+  height: 200px;
+  padding: 20px;
+}
+
+.container1-content {
+  height: 100px;
+  width: 500px;
+  margin: auto;
+}
+
+.container2 {
+  background-color: white;
+  height: 200px;
+  padding: 20px;
+}
+
+.container2-content {
+  height: 100px;
+  width: 500px;
+  margin: auto;
+}
+/*other body items*/
+.box {
+  margin:40px auto;
+  text-align:center;
+  width: 800px;
+  position: relative;
+  top: 72px;
+}
+
+.foot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #C0C0C0;
+  border-top: 2px solid #8c8a8a;
+}
+
+p.copy {
+  color: #8c8a8a;
+  margin: 10px auto;
+  font-size: 14px
+}
+
+/* footer social icons */
+ul.network {
+	list-style: none;
+	display: inline;
+	padding: 0;
+}
+ul.network li {
+	display: inline;
+	margin: 0 5px;
 }
